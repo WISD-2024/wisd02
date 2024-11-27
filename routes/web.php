@@ -16,11 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/ff/f1', function () {
     return view('ff.f1');
 });
 Route::get('/ff/f2', function () {
     return view('ff.f2');
+
+Route::get('/aa/a1', function () {
+    return view('aa.a1');
+});
+
+Route::get('/aa/a2', function () {
+     return view('aa.a2');
 });
 
 Route::get('/dashboard', function () {
