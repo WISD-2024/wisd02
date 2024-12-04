@@ -36,6 +36,9 @@ Route::get('/hh/h1', function () {
     return view('hh.h1');
 });
 
+Route::get('/hh/h2', function () {
+    return view('hh.h2');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
