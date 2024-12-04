@@ -23,6 +23,7 @@ Route::get('/ff/f1', function () {
 Route::get('/ff/f2', function () {
     return view('ff.f2');
 });
+
 Route::get('/aa/a1', function () {
     return view('aa.a1');
 });
@@ -30,12 +31,21 @@ Route::get('/aa/a1', function () {
 Route::get('/aa/a2', function () {
      return view('aa.a2');
 });
-Route::get('/aa/a1', function () {
+Route::get('/cc/c1', function () {
      return view('cc.c1');
 });
-Route::get('/aa/a2', function () {
+Route::get('/cc/c2', function () {
      return view('cc.c2');
 });
+
+Route::get('/hh/h1', function () {
+    return view('hh.h1');
+});
+
+Route::get('/hh/h2', function () {
+    return view('hh.h2');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
