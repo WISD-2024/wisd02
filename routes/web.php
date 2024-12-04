@@ -22,6 +22,7 @@ Route::get('/ff/f1', function () {
 });
 Route::get('/ff/f2', function () {
     return view('ff.f2');
+});
 
 Route::get('/aa/a1', function () {
     return view('aa.a1');
@@ -30,6 +31,11 @@ Route::get('/aa/a1', function () {
 Route::get('/aa/a2', function () {
      return view('aa.a2');
 });
+
+Route::get('/hh/h1', function () {
+    return view('hh.h1');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
