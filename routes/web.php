@@ -54,6 +54,14 @@ Route::get('/ee/e2', function () {
     return view('ee.e2');
 });
 
+Route::get('/bb/b1', function () {
+    return view('bb.b1');
+});
+
+Route::get('/bb/b2', function () {
+    return view('bb.b2');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
