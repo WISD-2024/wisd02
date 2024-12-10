@@ -46,6 +46,14 @@ Route::get('/hh/h2', function () {
     return view('hh.h2');
 });
 
+Route::get('/ee/e1', function () {
+    return view('ee.e1');
+});
+
+Route::get('/ee/e2', function () {
+    return view('ee.e2');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
